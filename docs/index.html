@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>LoRA.rar</title>
+  <link rel="icon" type="image/x-icon" href="images/dog_smoothie.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="css/bulma-slider.min.css">
+  <link rel="stylesheet" href="css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="js/fontawesome.all.min.js"></script>
+  <script src="js/bulma-carousel.min.js"></script>
+  <script src="js/bulma-slider.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">LoRA.rar: Learning to Merge LoRAs via Hypernetworks for Subject-Style Conditioned Image Generation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block"><a href="https://donaldssh.github.io/" target="_blank">Donald Shenaj</a><sup>&diams; &spades; </sup>,</span>
+              <span class="author-block"><a href="https://ondrejbohdal.github.io/" target="_blank">Ondrej Bohdal</a><sup>&diams;</sup>,</span>
+              <span class="author-block"><a href="https://openreview.net/profile?id=%7EMete_Ozay3" target="_blank">Mete Ozay</a><sup>&diams;</sup>,</span>
+              <span class="author-block"><a href="https://medialab.dei.unipd.it/members/pietro-zanuttigh/" target="_blank">Pietro Zanuttigh</a><sup>&spades; </sup>,</span>
+              <span class="author-block"><a href="https://umbertomichieli.github.io/" target="_blank">Umberto Michieli</a><sup>&diams;</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Samsung R&D Institute UK (SRUK)<sup>&diams; </sup>, University of Padova<sup>&spades; </sup><br>ICCV 2025</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                    <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2412.05148.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+                    <!-- Supplementary PDF link
+                    <span class="link-block">
+                      <a href="pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/donaldssh/LoRA.rar" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2412.05148" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="images/teaser_iccv.jpg" alt="Teaser"/>
+      <h2 class="subtitle has-text-justified">
+          We address the problem of joint content-style image generation by combining content and style LoRAs. Our method, <b>LoRA.rar</b>, uses a hypernetwork to dynamically predict the merging coefficients needed to combine content and style LoRAs. This enables high-quality, real-time LoRA merging. To evaluate the quality of the generated images, we propose a new MLLM protocol, which judges the fidelity of both content preservation and style transfer. The figure shows sample outputs generated by <b>LoRA.rar</b>.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent advancements in image generation models have enabled personalized image creation with both user-defined subjects (content) and styles. Prior works achieved personalization by merging corresponding low-rank adapters (LoRAs) through optimization-based methods, which are computationally demanding and unsuitable for real-time use on resource-constrained devices like smartphones. To address this, we introduce LoRA.rar, a method that not only improves image quality but also achieves a remarkable speedup of over 4000x in the merging process. We collect a dataset of style and subject LoRAs and pre-train a hypernetwork on a diverse set of content-style LoRA pairs, learning an efficient merging strategy that generalizes to new, unseen content-style pairs, enabling fast, high-quality personalization. Moreover, we identify limitations in existing evaluation metrics for content-style quality and propose a new protocol using multimodal large language models (MLLMs) for more accurate assessment. Our method significantly outperforms the current state of the art in both content and style fidelity, as validated by MLLM assessments and human evaluations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div id="results-carousel" class="carousel results-carousel">
+      <div class="item is-flex is-flex-direction-column is-align-items-center">
+        <div class="content-wrapper has-text-centered">
+        <img src="images/LoRArar_iccv.jpg" alt="Method Overview" class="carousel-image"/>
+        <h2 class="subtitle has-text-justified">
+          <b>Method Overview.</b> LoRA.rar pre-trains a hypernetwork that dynamically generates merging coefficients for new, unseen content-style LoRA pairs at deployment. In contrast, existing solutions are limited by either costly test-time training, as with ZipLoRA, or produce lower-quality outputs, as with conventional merging strategies.
+        </h2>
+        </div>
+      </div>
+      <div class="item is-flex is-flex-direction-column is-align-items-center">
+        <div class="content-wrapper has-text-centered">
+        <img src="images/limitation_metrics.jpg" class="carousel-image" alt="Limitation of Existing Metrics"/>
+        <h2 class="subtitle has-text-justified">
+          <b>Limitation of Existing Metrics.</b> Top: CLIP-I is maximized when the style image (shown in the small upper right thumbnail) content is replicated. Bottom: DINO is maximized when the generated image has no style transfer.
+        </h2>
+        </div>
+      </div>
+      <div class="item is-flex is-flex-direction-column is-align-items-center">
+        <div class="content-wrapper has-text-centered">
+        <img src="images/MLLM_Eval_iccv.jpg"  class="carousel-image" alt="Evaluation via MLLM Judge"/>
+        <h2 class="subtitle has-text-justified">
+         <b>Evaluation via MLLM Judge.</b> Generated images are checked separately for content and style. We mark the image as correct if both are approved.
+       </h2>
+        </div>
+     </div>
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+      <div class="content-wrapper has-text-centered">
+      <img src="images/qualitative_comparison.jpg" class="carousel-image" alt="Qualitative Comparison"/>
+      <h2 class="subtitle has-text-justified">
+        <b>Qualitative Comparison.</b> LoRA.rar generates better images than other merging strategies, including ZipLoRA.
+      </h2>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="https://www.youtube.com/embed/FfExWgcgNbQ?si=Ld7aISjCkmKa8n8-" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+<pre><code>
+@InProceedings{shenaj2025lora,
+    author    = {Shenaj, Donald and Bohdal, Ondrej and Ozay, Mete and Zanuttigh, Pietro and Michieli, Umberto},
+    title     = {LoRA.rar: Learning to Merge LoRAs via Hypernetworks for Subject-Style Conditioned Image Generation},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025}
+}
+</code></pre>
+</div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
