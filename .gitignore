@@ -1,0 +1,9 @@
+wandb
+*.safetensors
+*.bin
+*.pkl
+.vscode/*
+__pycache__*
+logs
+*.json
+datasets/
